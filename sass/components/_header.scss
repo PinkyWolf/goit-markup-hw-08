@@ -1,0 +1,14 @@
+.header {
+  width: 100%;
+  border-bottom: 1px solid var(--header-line-color);
+  background: var(--third-text-color);
+
+  @media screen and (min-width: 1200px) {
+    min-width: 1600px;
+  }
+
+  &-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
