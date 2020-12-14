@@ -54,15 +54,11 @@
 }
 .menu__button {
   display: block;
-  position: absolute;
-  top: 12px;
-  left: 90%;
-  margin: 0;
   padding: 0;
+  margin-right: 15px;
   border: none;
   background-color: transparent;
-  width: 40px;
-  height: 40px;
+  z-index: 100;
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -74,8 +70,8 @@
 .menu__button.is-open .icon-cross {
   display: block;
 }
-.menu__button .icon-menu {
-  display: block;
+.menu__button.is-open .icon-menu {
+  display: none;
 }
 
 .mobile-list {
@@ -111,6 +107,9 @@
 .navigation__svg:hover {
   fill: #2196f3;
 }
+.mobile-icon:hover {
+  fill: #2196f3;
+}
 .mobile-list__link:hover,
 .mobile-list__link:focus {
   color: var(--primary-text-color);
@@ -142,12 +141,6 @@
 }
 .mobile-cont .mobile__link {
   color: var(--main-text-color);
-}
-.icon-cross {
-  fill: #2196f3;
-}
-.icon-menu {
-  fill: #2196f3;
 }
 .title-properties {
   font-family: Raleway;
@@ -276,18 +269,19 @@
   }
 }
 .nav-cont .navigation__link {
-  /*  */
   color: var(--main-text-color);
 
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
+    font-size: 12px;
   }
 
   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 14px;
   }
 }
 .nav-cont .navigation__item + .navigation__item {

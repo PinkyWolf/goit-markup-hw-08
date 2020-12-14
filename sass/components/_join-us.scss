@@ -1,8 +1,9 @@
 .footer-join {
   display: inline-block;
-  padding-top: 60px;
-  /* padding-top: 10px; */
-  /*   padding-left: 70px; */
+
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+  }
 
   @media screen and (min-width: 1200px) {
     padding-top: 10px;

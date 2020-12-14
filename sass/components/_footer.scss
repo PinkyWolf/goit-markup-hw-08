@@ -11,17 +11,19 @@
 .footer-container {
   /*  */
   height: 603px;
-  padding-top: 60px;
+  /* padding-top: 60px; */
   /*   */
   margin-right: auto;
   margin-left: auto;
-  
+
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
     justify-content: space-around;
     width: 768px;
+    padding-top: 60px;
+    height: 463px;
   }
 
   @media screen and (max-width: 1199px) {
@@ -38,8 +40,8 @@
 .footer-list {
   list-style-type: none;
 
-  @media screen and (max-width: 1199px) {
-    margin-top: 30px;
+  @media screen and (max-width: 767px) {
+    padding-top: 60px;
   }
 
   &__title {

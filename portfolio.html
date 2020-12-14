@@ -88,7 +88,12 @@
         <ul class="project-list">
         <li class="flex-cont-portf"><a class="project-list__link" href="">
           <div class="project-card">
-            <img srcset="images/images-portfolio/технокряк.jpg 1x, images/images-portfolio/технокряк_x2.jpg 2x, images/images-portfolio/технокряк_x3.jpg 3x " src="images/images-portfolio/технокряк.jpg" width="354" height="294"  alt="фото_проекта">
+            <picture class="project-image">
+              <source srcset="images/images-portfolio/технокряк_x2.jpg 2x, images/images-portfolio/технокряк_x3.jpg 3x" media="(min-width=480px)" >
+              <source srcset="images/images-portfolio/технокряк.jpg 1x, images/images-portfolio/технокряк_x3.jpg 3x" media="(min-width=768px)" >
+              <source srcset="" >
+            <img src="images/images-portfolio/технокряк.jpg" max-width=374  alt="фото_проекта" >
+            </picture>
             <p class="overlay-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
             шпионажа и атак на защищённые сервера конкурентов.</p>
           </div>

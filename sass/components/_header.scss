@@ -3,6 +3,13 @@
   border-bottom: 1px solid var(--header-line-color);
   background: var(--third-text-color);
 
+  @media screen and (max-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    width: 480px;
+  }
+
   @media screen and (min-width: 1200px) {
     min-width: 1600px;
   }

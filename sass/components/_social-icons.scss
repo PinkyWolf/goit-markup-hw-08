@@ -1,9 +1,13 @@
 .social-list {
   display: flex;
-  padding-bottom: 30px;
+  padding-bottom: 21px;
   align-items: center;
   justify-content: center;
   list-style: none;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 30px;
+  }
 
   &__icons {
     margin-right: 10px;
