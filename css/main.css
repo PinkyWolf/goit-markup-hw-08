@@ -122,8 +122,8 @@ body {
   display: block;
 }
 
-.menu__button .icon-menu {
-  display: block;
+.menu__button.is-open .icon-menu {
+  display: none;
 }
 
 .mobile-list {
@@ -419,7 +419,7 @@ body {
 @media screen and (min-width: 768px) {
   .main {
     align-items: center;
-    width: 100;
+    width: 100%;
   }
 }
 
@@ -445,6 +445,7 @@ body {
   .main__container {
     width: 768px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/header_tablet_x1.jpg);
+    background-size: cover;
   }
 }
 
@@ -1357,6 +1358,16 @@ body {
   /*   */
   margin-right: auto;
   margin-left: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
+    width: 768px;
+  }
 }
 
 @media screen and (max-width: 1199px) {
