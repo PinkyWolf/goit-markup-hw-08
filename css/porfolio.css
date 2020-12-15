@@ -397,12 +397,12 @@ body {
 }
 
 .filter {
-  /*  */
-  /*  */
   align-items: center;
   height: 91px;
   margin-top: 60px;
   margin-bottom: 40px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @media screen and (max-width: 767px) {
@@ -500,6 +500,7 @@ body {
     flex-wrap: wrap;
     margin-right: auto;
     margin-left: auto;
+    width: 768px;
   }
 }
 
@@ -522,6 +523,13 @@ body {
   margin-bottom: 30px;
   border: 1px solid #eeeeee;
   outline: none;
+}
+
+@media screen and (max-width: 767px) {
+  .flex-cont-portf {
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 @media screen and (min-width: 768px) {

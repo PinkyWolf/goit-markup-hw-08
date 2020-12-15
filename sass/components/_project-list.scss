@@ -12,6 +12,7 @@
     flex-wrap: wrap;
     margin-right: auto;
     margin-left: auto;
+    width: 768px;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
@@ -29,6 +30,10 @@
   margin-bottom: 30px;
   border: 1px solid #eeeeee;
   outline: none;
+  @media screen and (max-width: 767px) {
+    margin-right: auto;
+    margin-left: auto;
+  }
 
   @media screen and (min-width: 768px) {
     width: 354px;
